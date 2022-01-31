@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 
     pool.wait_idle();
 
-    uint64_t size, count = 0;
+    uint64_t size = 0, count = 0;
     pool.finish([&] { size += t_size; count += t_count; });
 
     std::cout << "Size: " << size / 1024 << " KB\n";
