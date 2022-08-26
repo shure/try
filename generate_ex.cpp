@@ -1,3 +1,6 @@
+// g++ generate_ex.cpp `~/llvm-project/build/bin/llvm-config --cxxflags --ldflags --libs --link-static ` -lpthread -ldl -lcurses -lz -g -o generate_ex
+// ./generate_ex
+// g++ caller.cpp output.o
 
 #include "llvm/ADT/APFloat.h"
 #include "llvm/ADT/Optional.h"
