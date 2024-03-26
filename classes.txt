@@ -1,0 +1,16 @@
+
+A()
+A()
+A(int)
+A(const A&)
+A(const A&)
+func1
+A(A&&)
+func1
+func2
+A(int)
+xx.val 2
+func2
+A(int)
+operator=(A&&)
+y.val 2
