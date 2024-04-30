@@ -14,10 +14,11 @@ public:
     A(A&& a) : val{a.val} { printf("A(A&&)\n"); }
     A& operator=(const A& a) { val = a.val; printf("operator=(const A&)\n"); return *this; }
     A& operator=(A&& a) { val = a.val; printf("operator=(A&&)\n"); return *this; }
+    ~A() { printf("~A()\n"); }
 };
 
 void func1(A a) {
-    printf("func1\n");
+    printf("func1, %d\n", a.val);
 }
 
 A func2() {
